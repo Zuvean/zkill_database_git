@@ -1,7 +1,7 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name='Trial Run',
     version='V1.1',
-    packages=['zkill_database_git',],
+    packages=find_packages(),
 )
