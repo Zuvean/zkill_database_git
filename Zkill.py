@@ -19,7 +19,7 @@ frame_aggregation = []
 victim_aggregation = []
 attackers_aggregation = []
 last_update = time()
-os.environ["AIRTABLE_KEY"] = "keyAyLi47AijQ6KOv"
+os.environ['AIRTABLE_KEY'] = "keyAyLi47AijQ6KOv"
 
 def retrieve():
   response = requests.get("https://redisq.zkillboard.com/listen.php?queueID=DataGod9674429039")
@@ -147,7 +147,7 @@ def save_data(data_set, location):
 def airtable_export(json_file,table):
     base_key = 'appaTgY78Ycqm3PkP'
     table_name = table
-    airtable_fuck = Airtable(base_key, table_name, api_key=os.environ['AIRTABLE_KEY'])
+    airtable_fuck = Airtable(base_key, table_name)
     file_insert = []
     for item in json_file:
         #pprint.pprint(item)
