@@ -5,7 +5,7 @@ Created on Sun Jul 26 16:06:43 2020
 @author: Harlan Johnson
 """
 import os
-from airtable import Airtable
+from airtable import airtable
 import json
 import time
 import pprint
