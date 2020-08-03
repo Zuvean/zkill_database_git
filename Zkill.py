@@ -145,6 +145,7 @@ def save_data(data_set, location):
     #print("data saved - "+location)
     
 def airtable_export(json_file,table):
+    global airtable
     base_key = 'appaTgY78Ycqm3PkP'
     table_name = table
     airtable = airtable(base_key, table_name, api_key=os.environ['AIRTABLE_KEY'])
