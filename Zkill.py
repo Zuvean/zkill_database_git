@@ -147,7 +147,7 @@ def save_data(data_set, location):
 def airtable_export(json_file,table):
     base_key = 'appaTgY78Ycqm3PkP'
     table_name = table
-    airtable_fuck = airtable(base_key, table_name, api_key=os.environ['AIRTABLE_KEY'])
+    airtable_fuck = Airtable(base_key, table_name, api_key=os.environ['AIRTABLE_KEY'])
     file_insert = []
     for item in json_file:
         #pprint.pprint(item)
