@@ -145,10 +145,9 @@ def save_data(data_set, location):
     #print("data saved - "+location)
     
 def airtable_export(json_file,table):
-    global airtable
     base_key = 'appaTgY78Ycqm3PkP'
     table_name = table
-    airtable = airtable(base_key, table_name, api_key=os.environ['AIRTABLE_KEY'])
+    airtable_fuck = airtable(base_key, table_name, api_key=os.environ['AIRTABLE_KEY'])
     file_insert = []
     for item in json_file:
         #pprint.pprint(item)
@@ -161,7 +160,7 @@ def airtable_export(json_file,table):
         #print(type(typetest3))
         #airtable.insert(typetest3, typecast=True)
     #pprint.pprint(file_insert)
-    airtable.batch_insert(file_insert, typecast=True)
+    airtable_fuck.batch_insert(file_insert, typecast=True)
     
 
  
